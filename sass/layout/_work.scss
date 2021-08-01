@@ -1,3 +1,15 @@
+@media screen and (max-width: 1200px) {
+  .section-work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-work {
+    max-width: 1200px;
+  }
+}
+
 .section-work {
   padding-top: 0px;
 }
