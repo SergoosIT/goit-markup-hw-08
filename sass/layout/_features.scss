@@ -38,12 +38,11 @@
 @media screen and (min-width: 480px) {
   .features-container {
     justify-content: center;
-    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .features-container {
-    max-width: 768px;
+    // max-width: 768px;
     display: flex;
     align-items: center;
     justify-content: center;
