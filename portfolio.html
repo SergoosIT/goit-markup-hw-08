@@ -52,11 +52,12 @@
             </svg>
           </button>
         </nav>
+
         <ul class="contakt list">
           <li class="contact__item">
             <a class="contakt__office-link link" href="info@devstudio.com">
               <svg class="contakt__icon" Width="16px" Height="12px">
-                <use href="./images/icon/sprite.svg#icon-letter"></use>
+                <use href="./images/sprite.svg#letter"></use>
               </svg>
               info@devstudio.com
             </a>
@@ -64,7 +65,7 @@
           <li class="contact__item">
             <a class="contakt__tel-link link" href="tel:0961111111">
               <svg class="contakt__icon" Width="10px" Height="16px">
-                <use href="./images/icon/sprite.svg#icon-phone"></use>
+                <use href="./images/sprite.svg#smartphone"></use>
               </svg>
               096 111 11 11
             </a>
@@ -78,7 +79,7 @@
     <main>
       <section class="hero-portfolio">
         <div class="container">
-          <h1 hidden>Навигация портфолио--</h1>
+          <h1 class="visually-hidden">Навигация портфолио--</h1>
           <ul class="list button-list">
             <li class="list-item">
               <button class="nav-button current" type="button">Все</button>
@@ -99,17 +100,65 @@
 
           <!--Все продукты-->
 
-          <h2 hidden>Продукты</h2>
+          <h2 class="visually-hidden">Продукты</h2>
           <ul class="list products">
             <li class="products-item">
               <a href="#" class="products-link link">
                 <div class="portfolio-overlay">
-                  <img
-                    src="./images/tehno.jpg"
-                    alt="На ноутбуке веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img.webp    1x,
+                        ./images/desktop/portfolio/img@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img.jpg    1x,
+                        ./images/desktop/portfolio/img@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img.webp    1x,
+                        ./images/tablet/portfolio/img@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img.jpg    1x,
+                        ./images/tablet/portfolio/img@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img.webp    1x,
+                        ./images/mobile/portfolio/img@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img.jpg    1x,
+                        ./images/mobile/portfolio/img@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="На ноутбуке веб-сайт"
+                      width="100%"
+                      height="100%"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -125,12 +174,59 @@
             <li class="products-item">
               <a href="#" class="products-link link">
                 <div class="portfolio-overlay">
-                  <img
-                    src="./images/poster.jpg"
-                    alt="Два баскетболиста"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-1.webp    1x,
+                        ./images/desktop/portfolio/img-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-1.jpg    1x,
+                        ./images/desktop/portfolio/img-1@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-1.webp    1x,
+                        ./images/tablet/portfolio/img-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-1.jpg    1x,
+                        ./images/tablet/portfolio/img-1@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-1.webp    1x,
+                        ./images/mobile/portfolio/img-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-1.jpg    1x,
+                        ./images/mobile/portfolio/img-1@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="Два баскетболиста"
+                      width="100%"
+                      height="100%"
+                    />
+                  </picture>
                   <p class="overlay">
                     Постер New Orlean vs Golden Star это современная площадка
                     распространения коронавируса. Компании используют эту
@@ -149,12 +245,59 @@
             <li class="products-item">
               <a href="#" class="products-link link">
                 <div class="portfolio-overlay">
-                  <img
-                    src="./images/seafood.jpg"
-                    alt="Логотип на фоне большой рыбы"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-2.webp    1x,
+                        ./images/desktop/portfolio/img-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-2.jpg    1x,
+                        ./images/desktop/portfolio/img-2@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-2.webp    1x,
+                        ./images/tablet/portfolio/img-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-2.jpg    1x,
+                        ./images/tablet/portfolio/img-2@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-2.webp    1x,
+                        ./images/mobile/portfolio/img-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-2.jpg    1x,
+                        ./images/mobile/portfolio/img-2@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="Логотип на фоне большой рыбы"
+                      width="100%"
+                      height="100%"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресторан Seafood это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -170,12 +313,54 @@
             <li class="products-item">
               <a href="#" class="products-link link">
                 <div class="portfolio-overlay">
-                  <img
-                    src="./images/prime.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-3.webp    1x,
+                        ./images/desktop/portfolio/img-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-3.jpg    1x,
+                        ./images/desktop/portfolio/img-3@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-3.webp    1x,
+                        ./images/tablet/portfolio/img-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-3.jpg    1x,
+                        ./images/tablet/portfolio/img-3@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-3.webp    1x,
+                        ./images/mobile/portfolio/img-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-3.jpg    1x,
+                        ./images/mobile/portfolio/img-3@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Наушники" width="100%" height="100%" />
+                  </picture>
                   <p class="overlay">
                     Проект Prime это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -191,12 +376,54 @@
             <li class="products-item">
               <a href="#" class="products-link link">
                 <div class="portfolio-overlay">
-                  <img
-                    src="./images/boxes.jpg"
-                    alt="Две коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-4.webp    1x,
+                        ./images/desktop/portfolio/img-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-4.jpg    1x,
+                        ./images/desktop/portfolio/img-4@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-4.webp    1x,
+                        ./images/tablet/portfolio/img-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-4.jpg    1x,
+                        ./images/tablet/portfolio/img-4@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-4.webp    1x,
+                        ./images/mobile/portfolio/img-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-4.jpg    1x,
+                        ./images/mobile/portfolio/img-4@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Две коробки" width="100%" height="100%" />
+                  </picture>
                   <p class="overlay">
                     Проект Boxes это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -212,12 +439,59 @@
             <li class="products-item">
               <a href="#" class="products-link link">
                 <div class="portfolio-overlay">
-                  <img
-                    src="./images/no-borders.jpg"
-                    alt="На мониторе веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-5.webp    1x,
+                        ./images/desktop/portfolio/img-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-5.jpg    1x,
+                        ./images/desktop/portfolio/img-5@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-5.webp    1x,
+                        ./images/tablet/portfolio/img-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-5.jpg    1x,
+                        ./images/tablet/portfolio/img-5@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-5.webp    1x,
+                        ./images/mobile/portfolio/img-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-5.jpg    1x,
+                        ./images/mobile/portfolio/img-5@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="На мониторе веб-сайт"
+                      width="100%"
+                      height="100%"
+                    />
+                  </picture>
                   <p class="overlay">
                     Inspiration has no Borders это современная площадка
                     распространения коронавируса. Компании используют эту
@@ -236,12 +510,59 @@
             <li class="products-item">
               <a href="#" class="products-link link">
                 <div class="portfolio-overlay">
-                  <img
-                    src="./images/limited-edition.jpg"
-                    alt="Открытая книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-6.webp    1x,
+                        ./images/desktop/portfolio/img-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-6.jpg    1x,
+                        ./images/desktop/portfolio/img-6@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-6.webp    1x,
+                        ./images/tablet/portfolio/img-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-6.jpg    1x,
+                        ./images/tablet/portfolio/img-6@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-6.webp    1x,
+                        ./images/mobile/portfolio/img-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-6.jpg    1x,
+                        ./images/mobile/portfolio/img-6@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="Открытая книга"
+                      width="100%"
+                      height="100%"
+                    />
+                  </picture>
                   <p class="overlay">
                     Limited Edition это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -259,12 +580,59 @@
             <li class="products-item">
               <a href="#" class="products-link link">
                 <div class="portfolio-overlay">
-                  <img
-                    src="./images/lab.jpg"
-                    alt="Бирка с надписями"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-7.webp    1x,
+                        ./images/desktop/portfolio/img-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-7.jpg    1x,
+                        ./images/desktop/portfolio/img-7@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-7.webp    1x,
+                        ./images/tablet/portfolio/img-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-7.jpg    1x,
+                        ./images/tablet/portfolio/img-7@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-7.webp    1x,
+                        ./images/mobile/portfolio/img-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-7.jpg    1x,
+                        ./images/mobile/portfolio/img-7@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="Бирка с надписями"
+                      width="100%"
+                      height="100%"
+                    />
+                  </picture>
                   <p class="overlay">
                     Проект LAB это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -280,12 +648,59 @@
             <li class="products-item">
               <a href="#" class="products-link link">
                 <div class="portfolio-overlay">
-                  <img
-                    src="./images/growing-business.jpg"
-                    alt="На ноутбуке веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-8.webp    1x,
+                        ./images/desktop/portfolio/img-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio/img-8.jpg    1x,
+                        ./images/desktop/portfolio/img-8@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-8.webp    1x,
+                        ./images/tablet/portfolio/img-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/portfolio/img-8.jpg    1x,
+                        ./images/tablet/portfolio/img-8@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-8.webp    1x,
+                        ./images/mobile/portfolio/img-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/mobile/portfolio/img-8.jpg    1x,
+                        ./images/mobile/portfolio/img-8@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="На ноутбуке веб-сайт"
+                      width="100%"
+                      height="100%"
+                    />
+                  </picture>
                   <p class="overlay">
                     Growing Business это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
