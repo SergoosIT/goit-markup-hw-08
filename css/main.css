@@ -92,10 +92,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  max-height: 609px;
   background-color: var(--white-color);
   transform: translate(-50%, -50%);
+}
+@media screen and (min-widht: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .close-button {
@@ -118,8 +124,6 @@
   display: flex;
   flex-direction: column;
   padding: 40px;
-  width: 528px;
-  height: 581px;
 }
 
 .modal-form-head {
@@ -235,7 +239,7 @@
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
   background-color: var(--accent-color);
-  background-image: url("../images/icon/check-1.svg");
+  background-image: url("../images/active-check.svg");
   background-repeat: no-repeat;
   background-size: contain;
   border: 0.2px solid var(--white-color);
@@ -426,6 +430,10 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.current-mobile-menu {
   color: var(--accent-color);
 }
 

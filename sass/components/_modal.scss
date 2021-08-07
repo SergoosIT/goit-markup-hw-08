@@ -2,10 +2,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  max-height: 609px;
   background-color: var(--white-color);
   transform: translate(-50%, -50%);
+  @media screen and (min-widht: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .close-button {

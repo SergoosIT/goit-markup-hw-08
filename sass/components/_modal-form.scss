@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 40px;
-  width: 528px;
-  height: 581px;
 }
 
 .modal-form-head {
@@ -114,7 +112,7 @@
     }
     .modal-form-checkbox:checked + & {
       background-color: var(--accent-color);
-      background-image: url("../images/icon/check-1.svg");
+      background-image: url("../images/active-check.svg");
       background-repeat: no-repeat;
       background-size: contain;
       border: 0.2px solid var(--white-color);
