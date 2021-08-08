@@ -159,9 +159,13 @@ a.footer-contakt__link {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
+
   height: 50px;
   margin-bottom: 20px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;

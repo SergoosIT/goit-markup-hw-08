@@ -1429,9 +1429,13 @@ a.footer-contakt__link:focus, a.footer-contakt__link:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
   height: 50px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer-form-label {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form-label {
