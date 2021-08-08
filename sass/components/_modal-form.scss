@@ -87,6 +87,7 @@
 .modal-form-checkbox-label {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   margin-top: 20px;
   margin-bottom: 30px;
 
@@ -155,5 +156,6 @@
 }
 
 .modal-form-label-link {
+  flex-wrap: nowrap;
   color: var(--accent-color);
 }

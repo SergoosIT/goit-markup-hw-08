@@ -92,15 +92,15 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 450px;
-  max-height: 609px;
+  width: 450px;
+  height: auto;
   background-color: var(--white-color);
   transform: translate(-50%, -50%);
 }
 @media screen and (min-widht: 1200px) {
   .modal {
-    max-width: 528px;
-    max-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -215,6 +215,7 @@
 .modal-form-checkbox-label {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   margin-top: 20px;
   margin-bottom: 30px;
   font-family: var(--main-font);
@@ -279,6 +280,7 @@
 }
 
 .modal-form-label-link {
+  flex-wrap: nowrap;
   color: var(--accent-color);
 }
 
@@ -1404,7 +1406,6 @@ a.footer-contakt__link:focus, a.footer-contakt__link:hover {
 
 .footer-div-form {
   margin: 0 auto;
-  margin-left: auto;
 }
 
 .form-subscribe {
@@ -1426,6 +1427,8 @@ a.footer-contakt__link:focus, a.footer-contakt__link:hover {
 
 .footer-form-label {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 450px;
   height: 50px;
   margin-bottom: 20px;

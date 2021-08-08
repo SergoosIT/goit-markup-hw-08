@@ -139,8 +139,6 @@ a.footer-contakt__link {
 
 .footer-div-form {
   margin: 0 auto;
-
-  margin-left: auto;
 }
 
 .form-subscribe {
@@ -159,6 +157,8 @@ a.footer-contakt__link {
 }
 .footer-form-label {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 450px;
   height: 50px;
   margin-bottom: 20px;
