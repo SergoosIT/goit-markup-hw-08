@@ -95,6 +95,8 @@
   @media screen and (max-width: 1199px) {
     font-size: 12px;
   }
+
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   font-family: var(--main-font);
@@ -142,7 +144,7 @@
 .modal-form-btn {
   display: inline-block;
   align-self: center;
-  // text-align: center;
+  text-align: center;
   min-width: 200px;
   min-height: 50px;
   padding-top: 10px;
@@ -169,6 +171,6 @@
 }
 
 .modal-form-label-link {
-  // flex-wrap: nowrap;
+  flex-wrap: wrap;
   color: var(--accent-color);
 }
