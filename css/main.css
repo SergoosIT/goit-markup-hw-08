@@ -90,12 +90,19 @@
 
 .modal {
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
   width: 450px;
-  height: auto;
+  max-height: 100%;
+  overflow: auto;
   background-color: var(--white-color);
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 100%;
+  }
 }
 @media screen and (min-widht: 1200px) {
   .modal {
@@ -120,10 +127,9 @@
   fill: var(--accent-color);
 }
 
-.modal-form-div {
+.modal-form {
   display: flex;
   flex-direction: column;
-  padding: 40px;
 }
 
 .modal-form-head {
@@ -191,6 +197,7 @@
   width: 100%;
   height: 120px;
   margin-top: 6px;
+  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
@@ -212,12 +219,16 @@
   border-color: var(--accent-color);
 }
 
+.modal-form-accept-policy {
+  position: relative;
+  align-self: center;
+  padding-left: 23px;
+  margin-bottom: 30px;
+}
+
 .modal-form-checkbox-label {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
-  margin-top: 20px;
-  margin-bottom: 30px;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -225,9 +236,18 @@
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+@media screen and (max-width: 1199px) {
+  .modal-form-checkbox-label {
+    font-size: 12px;
+  }
+}
 .modal-form-checkbox-label::before {
-  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   content: "";
+  display: inline-block;
   width: 16px;
   height: 15px;
   border-radius: 2px;
@@ -255,12 +275,14 @@
 }
 
 .modal-form-btn {
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  align-self: center;
+  min-width: 200px;
+  min-height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   align-items: center;
+  overflow: hidden;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -280,7 +302,6 @@
 }
 
 .modal-form-label-link {
-  flex-wrap: nowrap;
   color: var(--accent-color);
 }
 
@@ -1404,10 +1425,11 @@ a.footer-contakt__link:focus, a.footer-contakt__link:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-div-form {
-  margin: 0 auto;
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer-div-form {
+    margin: 0 auto;
+  }
 }
-
 .form-subscribe {
   margin-bottom: 20px;
   margin-top: 60px;
@@ -1429,6 +1451,7 @@ a.footer-contakt__link:focus, a.footer-contakt__link:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
 }
