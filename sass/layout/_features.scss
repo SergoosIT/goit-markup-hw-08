@@ -24,13 +24,24 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
+
 .features-item:not(:last-child) {
   margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0px;
   }
 }
+
+.features-item:nth-child(-n + 2) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
 .description {
   font-family: var(--main-font);
   font-weight: 400;
@@ -89,9 +100,6 @@
     width: 270px;
   }
 
-  .section-title {
-    text-align: left;
-  }
   .description {
     width: 270px;
     margin-top: 10px;
