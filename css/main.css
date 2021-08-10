@@ -854,12 +854,18 @@ body {
   flex-wrap: wrap;
   align-items: center;
   border: transparent;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .button-list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    margin-bottom: 50px;
   }
 }
 
@@ -877,7 +883,7 @@ body {
 }
 
 .hero-portfolio {
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -921,14 +927,6 @@ body {
 
 .products-item {
   background: var(--white-color);
-}
-@media screen and (min-width: 480px) {
-  .products-item {
-    flex-basis: calc((100% - 30px) / 1);
-    margin-left: 30px;
-    margin-top: 30px;
-    max-width: 450px;
-  }
 }
 @media screen and (min-width: 768px) {
   .products-item {
