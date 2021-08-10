@@ -1,4 +1,7 @@
 // ===================Studia===================
+.hero {
+  min-width: auto;
+}
 
 .hero_main {
   display: flex;
@@ -15,7 +18,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #c4c4c4;
+  @media screen and (min-width: 1200px) {
+    min-height: 600px;
+  }
 }
+
 @media (min-device-pixel-ratio) and (min-width: 280px),
   (min-resolution: 192dpi) and (min-width: 280px),
   (min-resolution: 2dppx) and (min-width: 280px) {
@@ -90,6 +97,10 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  @media screen and (min-width: 1200px) {
+    max-width: 100%;
+    font-size: 44px;
+  }
 }
 
 .hero__button.service {

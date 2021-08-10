@@ -725,6 +725,10 @@ body {
   color: var(--accent-color);
 }
 
+.hero {
+  min-width: auto;
+}
+
 .hero_main {
   display: flex;
   align-items: center;
@@ -736,6 +740,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #c4c4c4;
+}
+@media screen and (min-width: 1200px) {
+  .hero_main {
+    min-height: 600px;
+  }
 }
 
 @media (min-device-pixel-ratio) and (min-width: 280px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px), (min-resolution: 192dpi) and (min-width: 280px), (min-resolution: 2dppx) and (min-width: 280px) {
@@ -785,6 +794,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 100%;
+    font-size: 44px;
+  }
 }
 
 .hero__button.service {
@@ -972,7 +987,6 @@ body {
 .features {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -999,6 +1013,11 @@ body {
 
 .features-item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .features-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 .description {
