@@ -37,7 +37,7 @@
 }
 
 .features-item:nth-child(-n + 2) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 30px;
   }
 }
@@ -87,6 +87,7 @@
   .link-icon {
     width: 270px;
     height: 120px;
+    margin: 0px;
   }
 
   .features-item:not(:last-child) {
@@ -98,6 +99,7 @@
   }
   .features-item {
     width: 270px;
+    margin-bottom: 0px;
   }
 
   .description {

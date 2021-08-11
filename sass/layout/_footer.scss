@@ -127,6 +127,9 @@ a.footer-contakt__link {
     display: flex;
     justify-content: center;
   }
+  @media screen and (min-width: 1200px) {
+    justify-content: unset;
+  }
 }
 
 .footer-icons__item:not(:last-child) {
